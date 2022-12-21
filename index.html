@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntervalClock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/53dc7df5e2.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="clock-box">
+        <h1 class="clock-header">interval timer</h1>
+        <div class="btns">
+            <button class="start-work"><i class="fa-solid fa-play"></i></button>
+            <button class="reset-work"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
+        <div class="clock-info">
+            <span class="series-count">0</span>
+            <p>series</p>
+            <p><span class="clock-count">0</span></p>
+            <p class="text"></p>
+        </div>
+        <i class="fa-solid fa-gear"></i>
+        <div class="settings">
+            <form class="form">
+                <div class="form-box">
+                    <label for="time-work" >
+                        Specify the timing of the exercise:
+                        <p>(the time is specified in seconds)</p>
+                    </label>
+                    <input type="number" id="time-work" class="time-work" value="30">
+                </div>
+                <div class="form-box">
+                    <label for="time-break">
+                        Specify the break time:
+                        <p>(the time is specified in seconds)</p>
+                    </label>
+                    <input type="number" id="time-break" class="time-break" value="60">
+                </div>
+            </form>
+            <button class="save-btn">save</button>
+            <i class="fa-solid fa-x"></i>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #000;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.clock-box {
+	position: relative;
+	background-color: #14213d;
+	margin: 0 2em;
+	padding: 6em 3em;
+	border-radius: 8px;
+	border: 1px solid #fca311;
+}
+.clock-header {
+	color: #e5e5e5;
+	font-size: 5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.clock-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.clock-info p {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #e5e5e5;
+}
+.clock-count {
+	font-size: 8rem;
+	color: #fca311;
+}
+.fa-gear {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0.3em;
+	font-size: 2.5rem;
+	color: #fca311;
+	cursor: pointer;
+}
+.series-count {
+	font-size: 3rem;
+	color: #fca311;
+}
+.settings {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.form{
+    padding: 2em;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.form-box label{
+    font-size: 1.8rem;
+}
+label p{
+    color: rgba(0,0,0,.4);
+}
+.form-box input{
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+}
+.save-btn{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #fca311;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.fa-x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    padding: 0.5em;
+    color: #fca311;
+    cursor: pointer;
+}
+.active{
+    display: flex;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+.btns button{
+    font-size: 2rem;
+    color: #fca311;
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid #fca311;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btns button:nth-child(1){
+    margin-right: 2em;
+}
+@media (min-width:1100px){
+    .clock-box {
+        padding: 10em;
+    }
+    .clock-header {
+        font-size: 6rem;
+    }
+    .fa-gear {
+        top: 10px;
+        right: 10px;
+        padding: 0.5em;
+        font-size: 3rem;
+    }
+    .btns button{
+        font-size: 3rem;
+    }
+    .clock-info p {
+        font-size: 4rem;
+    }
+    .clock-count {
+        font-size: 10rem;
+    }
+    .series-count {
+        font-size: 5rem;
+    }
+    .form-box{
+        row-gap: 2em;
+    }
+    .form-box label{
+        font-size: 2.5rem;
+    }
+    .form-box input{
+        margin-bottom: 2em;
+        font-size: 2rem;
+    }
+    .save-btn{
+        font-size: 3rem;
+    }
+    .fa-x{
+        font-size: 3rem;
+        padding: 1em;
+    }
+}
